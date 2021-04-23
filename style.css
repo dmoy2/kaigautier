@@ -1,0 +1,101 @@
+/* Author: Derek Moy */
+/* GitHub: https://github.com/dmoy2 */
+
+/* Background Color - Blue: #9BCAF2 */
+/* Accent Color - Light Pink: #F2E9EE */
+/* Accent Color - Dark Pink: #FFBAEB */
+
+/* Universal Rules */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 20px;
+    background-color: #9BCAF2;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'VT323', Helvetica, serif;
+}
+
+.row {
+    border: 2px solid red;
+}
+
+.col {
+    border: 2px solid blue;
+}
+
+.aside {
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    border-style: solid;
+    border-width: 4px 4px 14px 4px;
+    border-image-source: url(./imgs/navboxdraft.png);
+    border-image-slice: 2 2 7 2;
+    border-image-repeat: stretch;
+}
+
+.aside .nav a {
+    margin: 15px;
+    padding: 0 10px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.aside .nav a:hover {
+    background-color: #F2E9EE; 
+}
+
+.aside .nav a:active {
+    background-color: #FFBAEB;
+}
+
+
+/* Gif Rules */
+
+.gif {
+    width: 300px;
+    height: 240px;
+    margin: 0 20px 40px 20px;
+    border-style: solid;
+    border-width: 32px 14px 20px 14px;
+    border-image-source: url(./imgs/WindowSquare.png);
+    border-image-slice: 16 7 10 7;
+    border-image-repeat: stretch;
+}
+
+#girl-gif {
+    height: 365px;
+}
+
+#wings-gif {
+    height: 455px;
+}
+
+#dress-gif {
+    height: 300px;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width:600px) {
+    .gif {
+        width: 240px;
+        height: 180px;
+    }
+    
+    #girl-gif {
+        height: 300px;
+    }
+
+    #wings-gif {
+        height: 380px;
+    }
+}
