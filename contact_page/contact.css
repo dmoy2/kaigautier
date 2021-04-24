@@ -1,0 +1,36 @@
+/* Author: Derek Moy */
+/* GitHub: https://github.com/dmoy2 */
+
+/* Background Color - Blue: #9BCAF2 */
+/* Accent Color - Light Pink: #F2E9EE */
+/* Accent Color - Dark Pink: #FFBAEB */
+
+.contact-card {
+    border-style: solid;
+    border-width: 30px 20px 22px 14px;
+    border-image: url(../imgs/1920x1080window.png);
+    border-image-slice: 15 10 11 7;
+    border-image-repeat: stretch;
+}
+
+.portrait {
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+    border-width: 32px 14px 20px 14px;
+    border-image: url(../imgs/WindowSquare.png);
+    border-image-slice: 16 7 10 7;
+    border-image-repeat: stretch;
+}
+
+.envelope {
+    width: 45px;
+    height: 28px;
+    padding: 0;
+}
+
+#name {
+    font-size: 3rem;
+    line-height: 10px;
+    padding: 5px 0;
+}
