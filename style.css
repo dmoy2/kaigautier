@@ -60,7 +60,6 @@ html, body {
     padding: 0;
     border-radius: 0;
     border: 3px outset whitesmoke;
-    /* box-shadow: 5px 5px 5px grey; */
 }
 
 .aside .nav a:hover {

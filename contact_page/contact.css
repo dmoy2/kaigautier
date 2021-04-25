@@ -42,9 +42,15 @@
 
 .submit {
     background-color: #FFBAEB;
-    border: 1px solid grey;
+    border: 3px inset whitesmoke;
+    border-radius: 0%;
 }
 
 .submit:hover {
     color: white;
+}
+
+.submit:active {
+    border-style: outset;
+    color: black;
 }
