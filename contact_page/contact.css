@@ -8,7 +8,7 @@
 .contact-card {
     border-style: solid;
     border-width: 30px 20px 22px 14px;
-    border-image: url(../imgs/1920x1080window.png);
+    border-image: url(../imgs/windows/1920x1080window.png);
     border-image-slice: 15 10 11 7;
     border-image-repeat: stretch;
     margin-bottom: 50px;
@@ -20,7 +20,7 @@
     padding: 0;
     border-style: solid;
     border-width: 32px 14px 20px 14px;
-    border-image: url(../imgs/WindowSquare.png);
+    border-image: url(../imgs/windows/WindowSquare.png);
     border-image-slice: 16 7 10 7;
     border-image-repeat: stretch;
 }
@@ -29,17 +29,25 @@
     width: 45px;
     height: 28px;
     padding: 0;
-    /* margin: auto; */
 }
 
 #name {
-    font-size: 3rem;
-    line-height: 2rem;
-    /* text-align:center; */
-    padding: 5px 0px;
+    font-size: 4rem;
+    line-height: 3rem;
+    /* text-align: center; */
+    /* padding: 5px 0px; */
     margin: auto;
 }
 
+.icon {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 10px 30px;
+}
+
+
+/* Form CSS Rules */
 .submit {
     background-color: #FFBAEB;
     border: 3px inset whitesmoke;
