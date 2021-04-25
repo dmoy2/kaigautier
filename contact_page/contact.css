@@ -29,12 +29,15 @@
     width: 45px;
     height: 28px;
     padding: 0;
+    /* margin: auto; */
 }
 
 #name {
     font-size: 3rem;
-    line-height: 10px;
+    line-height: 2rem;
+    /* text-align:center; */
     padding: 5px 0px;
+    margin: auto;
 }
 
 .submit {
