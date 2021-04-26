@@ -28,8 +28,7 @@
 #name {
     font-size: 4rem;
     line-height: 3rem;
-    /* text-align: center; */
-    /* padding: 5px 0px; */
+    padding: 0 3px;
     margin: auto;
 }
 
@@ -66,18 +65,39 @@
 
 /* Media Queries */
 
+/* XS-S */
 @media only screen and (max-width:576px) {
     .icon {
         margin: 10px 10px;
     }
 }
 
+/* S-M */
 @media only screen and (max-width: 768px) {
+    #name {
+        font-size: 2rem;
+        text-align: center;
+    }
+
     .icon {
         width: 20px;
         height: 20px;
         margin: 10px 12px;
         text-align: center;
+    }
+
+    .portrait,
+    #name-socials  {
+        margin: 0;
+    }
+
+    .portrait {
+        max-width: 150px;
+        max-height: 180px;
+    }
+
+    #socials {
+        justify-content: center !important;
     }
 
     #form-names {
@@ -88,35 +108,49 @@
         flex-direction: column;
         align-items: flex-start !important; 
     }
-/* 
-    #portrait-name {   
-        font-size:medium;
-    } */
 }
 
-@media only screen and (max-width: 992px) {
-    .icon {
-        width: 22px;
-        height: 22px;
-    }
-
+/* M-LG */
+@media only screen and (max-width: 992px) and (min-width: 770px) {
     #name {
-        font-size: 2rem;
+        font-size: 2.3rem;
         text-align: center;
     }
 
-    .portrait {
-        width: 150px;
-        height: 150px;
+    .icon {
+        width: 22px;
+        height: 22px;
+        margin: 10px 15px;
     }
 
-    #socials {
-        justify-content: center !important;
+    .portrait {
+        max-width: 150px;
+        max-height: 180px;
+        margin-left: 30px;
+    }
+
+    #name-socials {
+        margin-right: 30px;
     }
 }
 
+/* LG-XL */
 @media only screen and (min-width: 993px) {
+    #name {
+        font-size: 3.5rem;
+        margin-left: 15px;
+    }
+
     .icon {
-        margin: 10px 15px;
+        width: 45px;
+        height: 45px;
+        /* padding-right: 10px; */
+        margin: 10px 20px;
+    }
+
+    .portrait {
+        max-width: 180px;
+        max-height: 210px;
+        margin-left: 50px;
     }
 }
