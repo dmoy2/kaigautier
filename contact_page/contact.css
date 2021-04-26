@@ -25,12 +25,6 @@
     border-image-repeat: stretch;
 }
 
-.envelope {
-    width: 45px;
-    height: 28px;
-    padding: 0;
-}
-
 #name {
     font-size: 4rem;
     line-height: 3rem;
@@ -61,4 +55,68 @@
 .submit:active {
     border-style: outset;
     color: black;
+}
+
+.phone-input {
+    min-width: 80px;
+    max-width: 90px;
+    padding: 5px;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width:576px) {
+    .icon {
+        margin: 10px 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .icon {
+        width: 20px;
+        height: 20px;
+        margin: 10px 12px;
+        text-align: center;
+    }
+
+    #form-names {
+        flex-direction: column;
+    }
+
+    #phone {
+        flex-direction: column;
+        align-items: flex-start !important; 
+    }
+/* 
+    #portrait-name {   
+        font-size:medium;
+    } */
+}
+
+@media only screen and (max-width: 992px) {
+    .icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    #name {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .portrait {
+        width: 150px;
+        height: 150px;
+    }
+
+    #socials {
+        justify-content: center !important;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .icon {
+        margin: 10px 15px;
+    }
 }

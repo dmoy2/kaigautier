@@ -13,13 +13,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css" type="text/css">
     <link rel="stylesheet" href="./contact.css" type="text/css">
+    <link rel="stylesheet" href="../style.css" type="text/css">
+    
 </head>
 <body>
     <div class="container py-5">
         <div class="row justify-content-around">
-            <div class="col col-md-2 col-sm-4">
+            <div class="col col-md-2">
                 <div class="aside">
                     <nav class="nav d-flex flex-column justify-content-center">
                         <h1 id="initial">KG</h1>
@@ -34,20 +35,19 @@
             <div class="col col-md-8">
                 <div class="row">
                     <div class="contact-card">
-                        <div class="row justify-content-around">
-                            <div class="col col-md-4 d-flex justify-content-center my-3 px-0">
+                        <div class="row justify-content-around" id="portrait-name">
+                            <div class="col col-md-6 col-lg-4 d-flex align-items-center justify-content-center my-2 px-0">
                                 <img src="../imgs/icons/kai.png" alt="Kai Portrait" class="portrait">
                             </div>
-                            <div class="col col-md-7 my-4 d-flex flex-column justify-content-end align-items-around">
+                            <div class="col col-md-6 col-lg-7 d-flex flex-column justify-content-end align-items-around my-3 px-0">
                                 <div class="row d-flex justify-content-start">
                                     <p id="name">Kai Gautier</p>
                                 </div>
-                                <div class="row d-flex justify-content-start">
+                                <div class="row d-flex justify-content-start p-0 m-0" id="socials">
                                     <img src="../imgs/icons/instagram.svg" class="icon" alt="IG Icon">
                                     <img src="../imgs/icons/twitter.svg" class="icon" alt="Twitter Icon">
                                     <img src="../imgs/icons/envelope.svg" alt="" class="icon">
                                     <img src="../imgs/icons/file-earmark-text.svg" alt="" class="icon">
-                                    
                                 </div>
                             </div>
                         </div>
@@ -60,12 +60,12 @@
                 </div>
                 <div class="row">
                     <form action="" method="POST">
-                        <div class="row d-flex flex-wrap">
-                            <div class="form-group col col-md-6 col-xs-12">
+                        <div class="row d-flex flex-wrap" id="form-names">
+                            <div class="form-group col col-md-6">
                                 <label for="first-name">First Name *</label>
                                 <input type="text" class="form-control" name="first-name" id="first-name" placeholder="Enter First Name" required>
                             </div>
-                            <div class="form-group col col-md-6 col-xs-12">
+                            <div class="form-group col col-md-6">
                                 <label for="last-name">Last Name *</label>
                                 <input type="text" class="form-control" name="last-name" id="last-name" placeholder="Enter Last Name" required>
                             </div>
@@ -76,13 +76,13 @@
                                 <input type="email" class="form-control" name="email" id="email" placeholder="Enter Email" required>
                             </div>
                         </div>
-                        <div class="row my-2">
+                        <div class="row">
                             <div class="form-group col-md-10">
                                 <label for="phone">Phone Number</label>
-                                <div class="row d-flex align-items-center">
-                                    <div class="col col-md-3 col-sm-12"><input type="text" class="form-control" name="phone1" id="phone1" placeholder="(###)" maxlength="3"></div>-
-                                    <div class="col col-md-3 col-sm-12"><input type="text" class="form-control" name="phone2" id="phone2" placeholder="###" maxlength="3"></div>-
-                                    <div class="col col-md-3 col-sm-12"><input type="text" class="form-control" name="phone2" id="phone3" placeholder="####" maxlength="4"></div>
+                                <div class="row d-flex align-items-center px-2" id="phone">
+                                    <div class="col col-md-3 col-sm-12 phone-input"><input type="text" class="form-control" name="phone1" id="phone1" placeholder="(###)" maxlength="3"></div>-
+                                    <div class="col col-md-3 col-sm-12 phone-input"><input type="text" class="form-control" name="phone2" id="phone2" placeholder="###" maxlength="3"></div>-
+                                    <div class="col col-md-3 col-sm-12 phone-input"><input type="text" class="form-control" name="phone2" id="phone3" placeholder="####" maxlength="4"></div>
                                 </div>
                             </div>
                         </div>
