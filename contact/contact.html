@@ -59,7 +59,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <form action="" method="POST">
+                    <form action="contact-form.php" method="POST">
                         <div class="row d-flex flex-wrap" id="form-names">
                             <div class="form-group col col-md-6">
                                 <label for="first-name">First Name *</label>
@@ -89,13 +89,13 @@
                         <div class="row my-2">
                             <div class="form-group">
                                 <label for="subject">Subject *</label>
-                                <input type="text" class="form-control" id="subject" placeholder="EX: question" required>
+                                <input type="text" class="form-control" name="subject" id="subject" placeholder="EX: question" required>
                             </div>
                         </div>
                         <div class="row my-2">
                             <div class="form-group">
                                 <label for="message">Message *</label>
-                                <textarea class="form-control" id="message" rows="3" required></textarea>
+                                <textarea class="form-control" name="message" id="message" rows="3" required></textarea>
                             </div>
                         </div>
                         <button type="submit" class="btn submit my-2">Send Message</button>
