@@ -1,0 +1,10 @@
+img {
+    border-style: solid;
+    border-width: 30px 20px 22px 14px;
+    border-image: url(../imgs/windows/1920x1080window.png);
+    border-image-slice: 15 10 11 7;
+    border-image-repeat: stretch;
+    margin-bottom: 50px;
+    min-height: 100px;
+    min-width: 200px;
+}
