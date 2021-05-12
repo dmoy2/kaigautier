@@ -73,8 +73,10 @@
 /* XS-S */
 @media only screen and (max-width:576px) {
     .icon {
-        margin: 10px 10px;
+        /* margin: 10px 10px; */
     }
+
+
 }
 
 /* S-M */
@@ -85,10 +87,19 @@
     }
 
     .icon {
-        width: 20px;
-        height: 20px;
-        margin: 10px 12px;
-        text-align: center;
+        width: 25px;
+        height: 25px;        
+    }
+
+    #socials a {
+        padding: 0;
+        margin: 0px 10px;
+        width: 25px;
+        height: 25px;
+    }
+
+    #socials {
+        justify-content: center !important;
     }
 
     .portrait,
@@ -99,10 +110,6 @@
     .portrait {
         max-width: 150px;
         max-height: 180px;
-    }
-
-    #socials {
-        justify-content: center !important;
     }
 
     #form-names {
@@ -116,20 +123,29 @@
 }
 
 /* M-LG */
-@media only screen and (max-width: 992px) and (min-width: 770px) {
+@media only screen and (max-width: 992px) and (min-width: 769px) {
     #name {
         font-size: 2.3rem;
         text-align: center;
     }
 
     .icon {
-        width: 22px;
-        height: 22px;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+
+    #socials a {
+        padding: 0;
         margin: 10px 15px;
+        width: 30px;
+        height: 30px;
     }
 
     .portrait {
         margin-left: 30px;
+        max-width: 180px;
+        max-height: 210px;
     }
 
     #name-socials {
@@ -147,12 +163,23 @@
     .icon {
         width: 45px;
         height: 45px;
-        margin: 10px 20px;
+        /* margin: 10px 20px; */
     }
 
     .portrait {
         max-width: 180px;
         max-height: 210px;
         margin-left: 50px;
+    }
+
+    #socials {
+        justify-content: start !important;
+    }
+
+    #socials a {
+        max-width: 45px;
+        max-height: 45px;
+        padding: 0;
+        margin: 0 20px;
     }
 }
