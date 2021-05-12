@@ -69,16 +69,6 @@
 
 
 /* Media Queries */
-
-/* XS-S */
-@media only screen and (max-width:576px) {
-    .icon {
-        /* margin: 10px 10px; */
-    }
-
-
-}
-
 /* S-M */
 @media only screen and (max-width: 768px) {
     #name {
